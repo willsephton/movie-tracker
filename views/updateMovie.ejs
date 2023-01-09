@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css"/>
+    </head>
+    <body>
+      <%- include('common/header'); -%>
+      <div class="formThing">
+        <h1 class="title2">Update a Movie</h1>
+        <div class="center">
+            <form method="POST" id="addMovieForm"> 
+                <label for="name">Movie Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name"/>
+                <br>
+                <label for="synopsis">Synopsis:</label>
+                <input type="text" id="synopsis" name="synopsis"/>
+                  <br>
+                  <label for="review">Review (out of 10):</label>
+                  <select id="review" name="review">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                <br>
+                <label for="watched">Watched:</label>
+                <select id="watched" name="watched">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <br>
+                <br>
+                <br>
+
+
+              <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+      </div>
+    </body>
+</html>
