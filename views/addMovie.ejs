@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css"/>
+    </head>
+    <body>
+      <%- include('common/header'); -%>
+        <h1>Add a Movie</h1>
+            <form method="POST" action="/addMovie"> 
+                <label for="name">Movie Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name"/>
+                <label for="synopsis">Synopsis</label>
+                <input type="text" id="synopsis" name="synopsis"/>
+                <label for="watched">Watched</label>
+                <input type="text" id="watched" name="watched"/>
+
+
+              <button type="submit">Submit</button>
+            </form>
+    </body>
+</html>
