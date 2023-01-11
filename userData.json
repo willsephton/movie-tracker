@@ -1,0 +1,15 @@
+[{
+    "email" : "admin@willsephton.com",
+    "password" : "sephton"
+},
+
+{
+    "email" : "user@willsephton.com",
+    "password" : "$2b$10$ffPZCGmD1SSfKfqlFvbuP.zzA.2UOInT"
+},
+
+{
+    "email" : "test@willsephton.com",
+    "password" : "$2b$10$ffPZCGmD1SSfKfqlFvbuP.zzA.2UOInT"
+}
+]
