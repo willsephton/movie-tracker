@@ -2,6 +2,10 @@ body{
 	background-color: #c9c9c9;
 }
 
+.center{
+	text-align: center;
+}
+
 .title2{
 	border: 1px solid #3b3b3b;
 	background-color: #3a3a3a;
@@ -13,6 +17,11 @@ body{
     font-family: monospace;
 	font-size: 3vh;
 
+}
+
+.delEdit{
+	color: white;
+	text-decoration: none;
 }
 
 .header {
@@ -88,3 +97,49 @@ ul {
 	}
 
 }
+
+table, td {
+	border: 3px solid rgb(88, 88, 88);
+	border-collapse: collapse;
+	text-align: center;
+  }
+
+#tableSynopsis{
+	font-size: 20px;
+}
+
+#addMovieForm{
+	justify-content: space-around;
+	font-family: monospace;
+	font-size: 2vh;
+}
+
+#submitButton{
+	color: white;
+	border: 1px solid gray;
+	background-color:#3a3a3a;
+	border-radius: 5px;
+	font: inherit;
+  }
+
+.formThing{
+	background-color: gray;
+	border: 3px solid black;
+	margin-right: auto;
+	margin-left:  auto; 
+	margin-top: 100px;
+	max-width: 500px; 
+  
+
+}
+
+#submitButton:focus {
+	outline: 2px solid gray;
+	font-weight: bold;
+	color: white;
+  }
+
+#submitButton:hover {
+	background-color: orange;
+	box-shadow: 3px 3px 5px grey;
+  }

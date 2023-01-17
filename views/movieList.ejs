@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css"/>
+    <title>The Movie List</title>
 </head>
 <body>
     <%- include('common/header'); -%>
@@ -11,15 +12,26 @@
         <tr>
             <th>Movie Title</th>
             <th>Synopsis</th>
+            <th>Review</th>
             <th>Watched</th>
         </tr>
         <% movies.forEach(function(movie){ %>
             <tr><td><%=  movie.name  %></td>
-            <td><%=  movie.synopsis  %></td>
-            <td><%=  movie.watched  %></td>
+            <td id="tableSynopsis"><%=  movie.synopsis  %></td>
+            <td><%=  movie.review  %> / 10</td>
+            <%if(movie.watched == "Yes"){%>
+                <td>✓</td>
+            <%}else if(movie.watched == "No"){%>
+                <td>✗</td>
+            <%} else{%>
+                <td><%= movie.watched %></td>
+                <%}%>
+            <td><a href="/movieList/delete/<%= movie.id %>" class="delEdit">Del</a></td>
+            <td ><a href="/movieList/update/<%= movie.id %>" class="delEdit">Edit</a> 
         <% }); %>
     </table>
 </div>
+
 
 </body> 
 </html>

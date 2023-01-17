@@ -27,6 +27,22 @@ async function main() {
       console.info(
         "Movie Database created"
       );
+
+    // User Database
+    const results2 = await db.collection("users").find({}).count();
+
+
+    if (results2) {
+      console.info("deleting collection");
+      await db.collection("users").drop();
+    }
+
+    const data2 = await fs.readFile(path.join(__dirname, "userData.json"), "utf8");
+    await db.collection("users").insertMany(JSON.parse(data2));
+
+      console.info(
+        "User Database created"
+      );
     
   } catch (error) {
     console.error("error:", error);

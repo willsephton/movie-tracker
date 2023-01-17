@@ -1,4 +1,15 @@
-[{"name": "Best Movie","synopsis": "This is the best movie ever","watched": "Of Course"}, {"name": "Best Movie 2","synopsis": "The best sequel ever created","watched": "Are you for real right now?"}]
+[{"name": "Best Movie","synopsis": "This is the best movie ever","review": "5", "watched": "Yes"},
+{"name": "Best Movie 2","synopsis": "The best sequel ever created","review": "7", "watched": "No"},
+{"name": "Change Up","synopsis": "Freaky Friday but Bateman Style","review": "7", "watched": "Yes"},
+{"name": "Drive","synopsis": "Ryan Gosling drives a car","review": "8", "watched": "Yes"},
+{"name": "Doctor Strange 2","synopsis": "Wanda becomes evil for some reason","review": "5", "watched": "Yes"},
+{"name": "Star Wars 2","synopsis": "The Clone Wars begins....","review": "9", "watched": "Yes"},
+{"name": "Star Wars 3","synopsis": "Anakin becomes Darth Vader","review": "10", "watched": "Yes"},
+{"name": "Baby Driver","synopsis": "A guy called baby drives a car","review": "8", "watched": "Yes"},
+{"name": "Die Hard","synopsis": "Bruce Willis is in Japan","review": "8", "watched": "Yes"},
+{"name": "The Layover","synopsis": "Two girls fight for a guy","review": "3", "watched": "Yes"},
+{"name": "Top Gun Maverick","synopsis": "Tom Cruise flies a plane","review": "8", "watched": "No"}
+]
 
 
 

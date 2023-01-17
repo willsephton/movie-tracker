@@ -5,16 +5,23 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node seeder.js"
+    "seed": "node seeder.js",
+    "dev": "nodemon app.js"
   },
   "author": "William Sephton",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "md5": "^2.3.0",
     "mongodb": "^4.13.0",
-    "mongoose": "^6.8.2",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.20"
   }
 }

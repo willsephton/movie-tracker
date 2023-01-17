@@ -1,30 +1,13 @@
 <html>
 <head>
     <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css"/>
+    <title>Online Movie Tracker</title>
 </head>
 <body>
     <%- include('common/header'); -%>
-<h1>Test</h1>
-<form action="/insert" method="post">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name">
-    <label for="synopsis">Synopsis</label>
-    <input type="text" id="synopsis" name="synopsis">
-    <label for="watched">Watched</label>
-    <input type="text" id="watched" name="watched">
-</form>
 
-<h2> load data</h2>
-<a href="/read">Load data</a>
-<div>
-    {{# each items}}
-    <article class="item">
-        <div>Name: {{ this.name }}</div>
-        <div>Synopsis: {{ this.synopsis }}</div>
-        <div>Watched: {{ this.watched }}</div>
-    </article>
-    {{/each}}
-</div>
+    <h1 class="title2">Please Login Or Create an Account</h1>
+    <h1 class="title2">To use the Movie Tracker</h1>
 
 </body> 
 </html>
