@@ -96,8 +96,8 @@ app.get("/logout", async (req, res) => {
 })
 
 
-app.listen(WEB_PORT, () => {
-  console.log(
-    `Example app listening at http://localhost:${WEB_PORT}`,
-  );
+const PORT = process.env.WEB_PORT || process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });
