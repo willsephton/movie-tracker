@@ -12,6 +12,8 @@ const User = require("./models/User");
 const movieController = require("./controllers/movie");
 const userController = require("./controllers/user");
 
+const MONGODB_URI = process.env.MONGODB_URI;
+
 const app = express();
 app.set("view engine", "ejs");
 
