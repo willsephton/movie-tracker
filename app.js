@@ -94,10 +94,3 @@ app.get("/logout", async (req, res) => {
   global.user = false;
   res.redirect('/');
 })
-
-
-const PORT = process.env.WEB_PORT || process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`✅ Server running at http://localhost:${PORT}`);
-});
