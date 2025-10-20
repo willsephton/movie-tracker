@@ -15,9 +15,6 @@ const userController = require("./controllers/user");
 const app = express();
 app.set("view engine", "ejs");
 
-
-const { WEB_PORT, MONGODB_URI } = process.env;
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
